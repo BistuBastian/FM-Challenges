@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <title>Frontend Mentor | Blog preview card</title>
+  </head>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <body>
+    <section>
+      <figure>
+        <img
+          src="/assets/images/illustration-article.svg"
+          id="img1"
+          alt="card_img"
+        />
+      </figure>
+      <button>Learning</button>
+      <article>
+        <h2>Published 21 Sep 2024</h2>
+        <a href="#">HTML & CSS Foundations</a>
+        <p>
+          These languages are the backbone of every webside, defining structure,
+          content and presentation.
+        </p>
+      </article>
+      <div>
+        <figure>
+          <img
+            src="/assets/images/image-avatar.webp"
+            id="img2"
+            alt="user_icon"
+          />
+        </figure>
+        <h4>Bistu Bastian</h4>
+      </div>
+    </section>
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/BistuBastian" target="_blank">BistuBastian</a>
+      &
+      <a href="https://github.com/jorgearias2404" target="_blank">Jorge Arias</a
+      >.
+    </footer>
+  </body>
 </html>
