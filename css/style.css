@@ -1,0 +1,119 @@
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray_1: hsl(0, 0%, 42%);
+  --Gray_2: hsl(0, 0%, 7%);
+}
+
+* {
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  background-color: var(--Yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  font-family: Figtree;
+  height: 30rem;
+  width: 20rem;
+  background-color: var(--White);
+  border: solid 2px #000;
+  padding: 1rem;
+  border-radius: 18px;
+  box-shadow: 0.7rem 0.7rem 0rem;
+}
+
+/* ------------------ IMG 1 ------------------ */
+
+section figure {
+  margin: 0;
+}
+
+#img1 {
+  display: flex;
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+}
+
+/* ------------------ BUTTON ------------------ */
+
+section button {
+  height: 1.8rem;
+  width: 6rem;
+  font-family: Figtree;
+  font-weight: 800;
+  background-color: var(--Yellow);
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+section button:hover {
+  color: var(--Yellow);
+  background-color: #000;
+  transition: 0.3s;
+}
+
+/* ------------------ TEXTO ------------------ */
+
+section article h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+section article a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+section article a:active {
+  color: var(--Yellow);
+}
+
+/* ------------------ USER ------------------ */
+
+section div {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section div figure img {
+  height: 3rem;
+  border: #000 2px solid;
+  border-radius: 50%;
+  box-shadow: 0.3rem 0.3rem 0;
+}
+
+section div h4 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* ------------------ FOOTER ------------------ */
+
+footer {
+  margin-top: 2rem;
+}
+
+footer a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
