@@ -3,19 +3,16 @@
   --White: hsl(0, 0%, 100%);
   --Gray_1: hsl(0, 0%, 42%);
   --Gray_2: hsl(0, 0%, 7%);
-}
-
-* {
   font-size: 16px;
 }
+
+/* ------------------ GENERAL ------------------ */
 
 body {
   height: 100%;
   background-color: var(--Yellow);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   height: 100vh;
 }
 

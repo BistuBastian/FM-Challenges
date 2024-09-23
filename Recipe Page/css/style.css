@@ -1,0 +1,151 @@
+:root {
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+
+  --Brown800: hsl(14, 45%, 36%);
+
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+
+  font-size: 16px;
+}
+
+/* ------------------ GENERAL ------------------ */
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #d873;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+section {
+  height: auto;
+  width: 40%;
+  background-color: #fff;
+  padding: 2rem;
+  margin: 5rem 0;
+  border-radius: 24px;
+  font-family: "Outfit";
+  color: var(--Stone600);
+}
+
+/* ------------------ FONT FORMATS ------------------ */
+
+h1,
+h2 {
+  font-family: "Young Serif";
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--Stone900);
+}
+
+h2 {
+  font-size: 1.7rem;
+  color: var(--Brown800);
+}
+
+h3 {
+  color: var(--Rose800);
+}
+
+hr {
+  margin-top: 2rem;
+}
+
+/* ------------------ HEAD IMG ------------------ */
+
+section figure {
+  margin: 0;
+}
+
+#head_img {
+  display: flex;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+/* ------------------ PREPARATION DIV ------------------ */
+
+section div {
+  width: auto;
+  padding: 0.1rem 1.7rem;
+  background-color: var(--Rose50);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* ------------------ LISTS FORMAT ------------------ */
+
+ul {
+  list-style-type: disc;
+  padding: 0 0 0 0.9rem;
+}
+
+ul li::marker {
+  content: "•";
+  color: var(--Brown800);
+}
+
+li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+ol li::marker {
+  font-family: "Young Serif";
+  color: var(--Brown800);
+}
+
+/* ------------------ TABLE FORMAT ------------------ */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table tr {
+  border-bottom: solid 1px var(--Stone150);
+}
+
+table tr td {
+  padding: 0.5rem;
+  width: 50%;
+}
+
+table tr td:first-child {
+  padding: 0 0 0 1.5rem;
+}
+
+table tr td:last-of-type {
+  font-weight: 600;
+  color: var(--Brown800);
+}
+
+table tr:last-of-type {
+  border-bottom: none;
+}
+
+/* ------------------ TABLE FORMAT ------------------ */
+
+footer {
+  margin-bottom: 1rem;
+}
+
+footer a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
