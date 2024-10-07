@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bistu Tasks</title>
+    <!-- BOOTSTRAP PARA ICONOS Y BOTONES (prueba) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="media/img/goat.png" type="image/x-icon">
+    <script src="app/script.js" defer></script>
+  </head>
+  <body>
+     
+    <!-------------------------- TITULO -------------------------->
+    
+    <div class="container">
+      <h1>Bistu Tasks</h1>
+    </div>
+
+    <!-------------------------- CATEGORIAS -------------------------->
+    <div class="container columns">
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">Para Empezar</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">En progreso</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">Pendiente</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">Terminado</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+    </div>
+
+    <!-------------------------- MODAL ACCIONES -------------------------->
+
+    <dialog class="confirm-modal">
+      <form method="dialog">
+        <h3>Eliminar tarea?</h3>
+        <p>Estás apunto de eliminar esta tarea.</p>
+        <div class="preview"></div>
+
+        <menu>
+          <button type="button" id="cancel">Cancelar</button>
+          <button type="submit" id="confirm">Eliminar</button>
+        </menu>
+      </form>
+    </dialog>
+    </footer>
+  </body>
+</html>
