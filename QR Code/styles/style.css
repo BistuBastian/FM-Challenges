@@ -1,0 +1,69 @@
+:root {
+  --White: #ffffff;
+  --Shadow: #1f325144;
+
+  --Slate300: #d6e2f0;
+  --Slate500: #68778d;
+  --Slate900: #1f3251;
+}
+
+body {
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: Outfit;
+  font-size: 15px;
+
+  background-color: var(--Slate300);
+}
+
+/* ==================== QR Card ==================== */
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  height: 500px;
+  width: 300px;
+
+  margin-bottom: 100px;
+  padding: 1rem;
+
+  border-radius: 18px;
+
+  background-color: var(--White);
+
+  box-shadow: var(--Shadow) 0 0 1rem 0;
+}
+
+.qr-img {
+  margin-bottom: 1rem;
+
+  border-radius: 0.7rem;
+}
+
+h1 {
+  padding: 0 1.3rem;
+  margin-bottom: 10px;
+
+  text-align: center;
+  font-size: 1.4rem;
+
+  color: var(--Slate900);
+}
+
+p {
+  padding: 0 2rem;
+
+  text-align: center;
+
+  color: var(--Slate500);
+}
