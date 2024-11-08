@@ -1,0 +1,132 @@
+:root {
+  --Green: hsl(75, 94%, 57%);
+
+  --White: hsl(0, 0%, 100%);
+
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  color: var(--White);
+  font-size: 14px;
+  font-family: inter;
+
+  background-color: var(--Grey900);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  width: 20rem;
+  height: auto;
+
+  margin-bottom: 3rem;
+  padding: 3rem;
+
+  border-radius: 15px;
+
+  background-color: var(--Grey800);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.user-pic {
+  height: 6rem;
+
+  margin: 0;
+  margin-bottom: 1rem;
+
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.user-location {
+  margin-bottom: 2rem;
+
+  font-weight: 700;
+  font-size: 1rem;
+
+  color: var(--Green);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  width: 100%;
+
+  margin: 0.7rem 0;
+  padding: 1rem 0;
+
+  text-align: center;
+  font-weight: 600;
+  color: var(--White);
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  background-color: var(--Grey700);
+
+  transition: all ease 0.2s;
+}
+
+.link:last-of-type {
+  margin-bottom: 0;
+}
+
+.link:hover {
+  transform: scale(1.03);
+
+  box-shadow: var(--Grey900) 3px 3px 0 5px;
+
+  transition: all ease 0.2s;
+}
+
+.link:active {
+  font-weight: 800;
+  color: var(--Grey900);
+
+  background-color: var(--Green);
+
+  transition: all ease 0.2s;
+}
+
+.attribution a {
+  color: var(--White);
+}
