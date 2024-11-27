@@ -41,8 +41,14 @@ p {
 
   text-align: center;
 }
+h1 {
+  font-size: 2.1rem;
+}
 .h1-thin {
   font-weight: 200;
+}
+.strong1 {
+  font-weight: 600;
 }
 .grid-container {
   margin: 2rem 12rem;
