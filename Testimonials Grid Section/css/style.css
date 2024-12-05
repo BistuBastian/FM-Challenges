@@ -13,7 +13,7 @@
   --Black: hsl(0, 0%, 0%);
 }
 
-body {
+main {
   display: flex;
   flex-direction: column;
 
@@ -177,7 +177,57 @@ body {
   color: var(--LightFont);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
+  .grid-container {
+    margin-top: 1rem;
+
+    width: 90vw;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  #card1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  #card2 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  #card3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  #card4 {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  #card5 {
+    grid-area: 3 / 1 / 4 / 4;
+  }
+  .testimonial-card {
+    height: auto;
+    padding: 1.5rem;
+
+    border-radius: 10px;
+
+    background-color: var(--Black);
+
+    box-shadow: var(--ShadowBlack) 1.5rem 2rem 2.5rem -2.5rem;
+
+    transition: all ease 0.2s;
+  }
+  .comillas {
+    position: absolute;
+
+    height: 8rem;
+    width: 8rem;
+
+    align-self: flex-end;
+
+    transform: translate(0, -1.5rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
   .grid-container {
     margin-top: 1rem;
 
