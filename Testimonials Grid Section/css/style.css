@@ -35,9 +35,9 @@ body {
 }
 
 .grid-container {
-  margin-top: 4rem;
+  margin-top: 6rem;
 
-  width: 80vw;
+  width: 77vw;
   height: auto;
 
   display: grid;
@@ -67,7 +67,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  padding: 2.5rem;
+  padding: 2rem;
 
   border-radius: 10px;
 
@@ -85,8 +85,8 @@ body {
 }
 
 .card-pic {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 
   margin-right: 1.5rem;
 
@@ -120,7 +120,7 @@ body {
   margin: 0;
   margin-top: 1.5rem;
 
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -141,12 +141,12 @@ body {
 .comillas {
   position: absolute;
 
-  height: 9rem;
-  width: 9rem;
+  height: 7.7rem;
+  width: 7.7rem;
 
   align-self: flex-end;
 
-  transform: translate(-3.3rem, -2.5rem);
+  transform: translate(-3.7rem, -2rem);
 }
 
 #card1 {
