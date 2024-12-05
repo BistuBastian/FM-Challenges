@@ -1,0 +1,221 @@
+:root {
+  --Background: hsl(217, 68%, 96%);
+
+  --ModerateViolet: hsl(263, 55%, 52%);
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --VeryDarkBlackishBlue: hsl(219, 29%, 14%);
+
+  --LightFont: hsl(0, 0%, 85%);
+
+  --ShadowBlack: hsla(0, 0%, 0%, 0.5);
+
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: auto;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  color: var(--White);
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Barlow Semi Condensed";
+
+  background-color: var(--Background);
+}
+
+.grid-container {
+  margin-top: 4rem;
+
+  width: 80vw;
+  height: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 20px;
+}
+
+#card1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+#card2 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+#card3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#card4 {
+  grid-area: 2 / 2 / 3 / 4;
+}
+#card5 {
+  grid-area: 1 / 4 / 3 / 5;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2.5rem;
+
+  border-radius: 10px;
+
+  background-color: var(--Black);
+
+  box-shadow: var(--ShadowBlack) 1.5rem 2rem 2.5rem -2.5rem;
+
+  transition: all ease 0.2s;
+}
+
+.card-header {
+  display: flex;
+
+  align-items: center;
+}
+
+.card-pic {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  margin-right: 1.5rem;
+
+  border-radius: 50%;
+
+  border: 3px solid var(--LightFont);
+}
+
+.user-testimony {
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  padding: 0;
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.graduate {
+  padding: 0;
+  margin: 0;
+  margin-top: 0.2rem;
+}
+
+.testimonial-introduction {
+  z-index: 1;
+
+  margin: 0;
+  margin-top: 1.5rem;
+
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.testimony {
+  margin: 0;
+  margin-top: 1.5rem;
+
+  font-size: 1.15em;
+  color: var(--LightFont);
+}
+
+.testimonial-card:hover {
+  transform: scale(1.02);
+
+  transition: all ease 0.2s;
+}
+
+.comillas {
+  position: absolute;
+
+  height: 9rem;
+  width: 9rem;
+
+  align-self: flex-end;
+
+  transform: translate(-3.3rem, -2.5rem);
+}
+
+#card1 {
+  background-color: var(--ModerateViolet);
+}
+#card2 {
+  background-color: var(--VeryDarkGrayishBlue);
+}
+#card3,
+#card5 {
+  color: var(--VeryDarkGrayishBlue);
+  background-color: var(--White);
+}
+#card3 .testimony,
+#card5 .testimony {
+  color: var(--VeryDarkGrayishBlue);
+}
+#card3 img,
+#card5 img {
+  border: var(--ModerateViolet) solid 3px;
+}
+#card4 {
+  background-color: var(--VeryDarkBlackishBlue);
+}
+#card1 .graduate,
+#card2 .graduate,
+#card4 .graduate {
+  color: var(--LightFont);
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container {
+    margin-top: 1rem;
+
+    width: 95vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial-card {
+    height: auto;
+    padding: 1.5rem;
+
+    border-radius: 10px;
+
+    background-color: var(--Black);
+
+    box-shadow: var(--ShadowBlack) 1.5rem 2rem 2.5rem -2.5rem;
+
+    transition: all ease 0.2s;
+  }
+  .comillas {
+    position: absolute;
+
+    height: 8rem;
+    width: 8rem;
+
+    align-self: flex-end;
+
+    transform: translate(0, -1.5rem);
+  }
+}
+
+.attribution {
+  margin-top: 1rem;
+  color: var(--VeryDarkBlackishBlue);
+}
+
+.attribution a {
+  color: var(--VeryDarkBlackishBlue);
+}
