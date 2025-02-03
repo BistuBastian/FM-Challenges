@@ -83,7 +83,7 @@ p {
   align-items: center;
   justify-content: center;
 
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
   padding: 0;
 
   width: auto;
@@ -134,6 +134,8 @@ p {
   border-radius: 10px;
 
   background-color: black;
+
+  transition: all ease 0.1s;
 }
 
 /* =============== CARDS =============== */
@@ -267,6 +269,14 @@ p {
   margin-top: auto;
 
   width: 105%;
+}
+
+/* =============== CARDS ANIMATION =============== */
+
+.grid-card:hover {
+  transform: scale(1.04);
+  box-shadow: var(--Purple100) 0.5rem 0.5rem 1rem;
+  animation: all ease 0.1s;
 }
 
 /* ========================= RESPONSIVE LAPTOP ========================= */
@@ -534,4 +544,12 @@ p {
   #card8 img {
     width: 200px;
   }
+}
+
+/* ========================= ATTRIBUTION ========================= */
+
+.attribution,
+.attribution a {
+  color: var(--Purple500);
+  font-weight: 500;
 }
